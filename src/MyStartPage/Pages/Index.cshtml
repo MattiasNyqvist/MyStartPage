@@ -1,10 +1,12 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "My Start Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<div class="text-center mt-5">
+    <h1 class="display-4">Hej, jag heter Mattias! 👋</h1>
+    <p class="lead mt-3">Idag är det @DateTime.Now.ToString("dddd, d MMMM yyyy", new
+                        System.Globalization.CultureInfo("sv-SE"))</p>
+        <p class="text-muted">En enkel ASP.NET Core Razor Pages-app deployad till Azure via GitHub Actions.</p>
+    </div>
